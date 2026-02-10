@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Год семьи 2024 - Сохранение семейных ценностей</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <div class="logo-img">🏠</div>
+                    <div class="logo-text">Год семьи 2024</div>
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav-link active">Главная</a>
+                    <a href="#initiatives" class="nav-link">Инициативы</a>
+                    <a href="#events" class="nav-link">Мероприятия</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                    
+                    <button class="mobile-register-btn" id="mobileRegisterBtn" style="display: none;">
+                        <i class="fas fa-user-plus"></i> Зарегистрироваться
+                    </button>
+                </nav>
+                
+                <button class="header-register-btn" id="headerRegisterBtn">
+                    <i class="fas fa-user-plus"></i> Зарегистрироваться
+                </button>
+                
+                <div class="header-contacts">
+                    <a href="tel:+78001234567" class="contact-phone">
+                        <i class="fas fa-phone"></i> 8 (800) 123-45-67
+                    </a>
+                    <a href="mailto:info@familyyear2024.ru" class="contact-email">
+                        <i class="fas fa-envelope"></i> info@familyyear2024.ru
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="screen first-screen" id="home">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h1 class="main-title">2024 год - Год семьи в России</h1>
+                        <p class="main-subtitle">Сохранение и защита традиционных семейных ценностей</p>
+                        <a href="#initiatives" class="btn-primary">Узнать об инициативах</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="./image/Container.png" alt="Семейные ценности">
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide-content">
+                        <h1 class="main-title">Поддержка семей</h1>
+                        <p class="main-subtitle">Государственные меры по укреплению института семьи</p>
+                        <a href="#events" class="btn-primary">Посмотреть мероприятия</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="./image/Поддержка семей.png" alt="Поддержка семей">
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide-content">
+                        <h1 class="main-title">Будущее поколение</h1>
+                        <p class="main-subtitle">Инвестиции в развитие детей и молодёжи</p>
+                        <button class="btn-primary" id="sliderRegisterBtn">
+                            <i class="fas fa-user-plus"></i> Зарегистрироваться
+                        </button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="./image/Будущее поколение.png" alt="Будущее поколение">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="slider-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="slider-indicators" id="sliderIndicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen second-screen" id="initiatives">
+        <div class="container">
+            <h2 class="section-title">Приоритетные инициативы региона</h2>
+            <p class="section-subtitle">Основные направления работы по сохранению и защите семейных ценностей</p>
+            
+            <div class="initiatives-grid">
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="initiative-title">Программа "Семейный очаг"</h3>
+                    <p class="initiative-description">Поддержка молодых семей в приобретении жилья и улучшении жилищных условий.</p>
+                    <button class="btn-details" data-modal="initiative1">Подробнее</button>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="initiative-title">"Дети - наше будущее"</h3>
+                    <p class="initiative-description">Развитие системы дополнительного образования и поддержки одарённых детей.</p>
+                    <button class="btn-details" data-modal="initiative2">Подробнее</button>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="initiative-title">Центры семейной психологии</h3>
+                    <p class="initiative-description">Создание бесплатных консультационных центров для семей в кризисных ситуациях.</p>
+                    <button class="btn-details" data-modal="initiative3">Подробнее</button>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="initiative-title">Наставничество для подростков</h3>
+                    <p class="initiative-description">Программа взаимодействия успешных взрослых с подростками из неполных семей.</p>
+                    <button class="btn-details" data-modal="initiative4">Подробнее</button>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="initiative-title">"Семейные традиции"</h3>
+                    <p class="initiative-description">Цикл образовательных мероприятий по возрождению семейных традиций и ценностей.</p>
+                    <button class="btn-details" data-modal="initiative5">Подробнее</button>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="initiative-title">Поддержка многодетных семей</h3>
+                    <p class="initiative-description">Комплекс мер социальной и материальной поддержки многодетных семей региона.</p>
+                    <button class="btn-details" data-modal="initiative6">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen third-screen" id="events">
+        <div class="container">
+            <h2 class="section-title">Запланированные мероприятия</h2>
+            <p class="section-subtitle">Примите участие в событиях, посвящённых Году семьи</p>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Марта</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Фестиваль "Семейные традиции"</h3>
+                        <p class="event-description">Большой праздник с мастер-классами, конкурсами и концертной программой для всей семьи.</p>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i> Центральный парк культуры и отдыха
+                        </div>
+                        <button class="btn-register" data-event="festival">Зарегистрироваться</button>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">22</span>
+                        <span class="date-month">Марта</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Семинар "Современная семья"</h3>
+                        <p class="event-description">Лекции и дискуссии с психологами, педагогами и юристами о современных вызовах для семьи.</p>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i> Конференц-зал "Сфера"
+                        </div>
+                        <button class="btn-register" data-event="seminar">Зарегистрироваться</button>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">Апреля</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Выставка "Семейные ценности"</h3>
+                        <p class="event-description">Фотовыставка и инсталляции, посвящённые истории семей региона и их традициям.</p>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i> Краеведческий музей
+                        </div>
+                        <button class="btn-register" data-event="exhibition">Зарегистрироваться</button>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">12</span>
+                        <span class="date-month">Апреля</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Онлайн-марафон "Родительство"</h3>
+                        <p class="event-description">Трёхдневный онлайн-марафон с экспертами по воспитанию, психологии и развитию детей.</p>
+                        <div class="event-location">
+                            <i class="fas fa-globe"></i> Онлайн-платформа
+                        </div>
+                        <button class="btn-register" data-event="marathon">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-up" id="toTopBtn">
+                <i class="fas fa-arrow-up"></i> Наверх
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <a href="#home" class="footer-logo">
+                            <div>🏠</div>
+                            <span>Год семьи 2024</span>
+                        </a>
+                        <p class="footer-copyright">
+                            © 2026<br>
+                            Все права защищены.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Навигация</h3>
+                        <nav class="footer-nav">
+                            <a href="#home" class="footer-nav-link">Главная</a>
+                            <a href="#initiatives" class="footer-nav-link">Инициативы</a>
+                            <a href="#events" class="footer-nav-link">Мероприятия</a>
+                            <a href="#contacts" class="footer-nav-link">Контакты</a>
+                        </nav>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Контакты</h3>
+                        <div class="footer-contacts">
+                            <div class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>г. Москва, ул. Примерная, д. 1</span>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@familyyear2024.ru">info@familyyear2024.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Социальные сети</h3>
+                        <div class="footer-social">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-odnoklassniki"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <button class="footer-up-btn" id="footerToTopBtn">
+                            <i class="fas fa-arrow-up"></i> Наверх
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="initiative1Modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Программа "Семейный очаг"</h2>
+                <p>Программа направлена на поддержку молодых семей в приобретении жилья и улучшении жилищных условий. Регион предоставляет субсидии и льготные ипотечные кредиты для семей с детьми, а также поддерживает строительство доступного жилья.</p>
+                <p>В рамках программы также предусмотрены консультации по вопросам ипотечного кредитования и юридической поддержки при покупке недвижимости.</p>
+                <p>Участниками программы могут стать молодые семьи, в которых оба супруга не достигли 35-летнего возраста.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="initiative2Modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>"Дети - наше будущее"</h2>
+                <p>Развитие системы дополнительного образования и поддержки одарённых детей является приоритетом региональной политики. В рамках инициативы создаются центры развития для детей разного возраста.</p>
+                <p>Программа включает бесплатные кружки, спортивные секции, творческие студии и научные лаборатории для детей от 5 до 18 лет.</p>
+                <p>Особое внимание уделяется выявлению и поддержке одарённых детей через систему конкурсов, олимпиад и грантов.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="initiative3Modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Центры семейной психологии</h2>
+                <p>Создание бесплатных консультационных центров для семей в кризисных ситуациях помогает сохранить семейные отношения и преодолеть трудности.</p>
+                <p>В центрах работают квалифицированные психологи, психотерапевты и семейные консультанты, которые оказывают помощь по вопросам детско-родительских отношений, супружеских конфликтов и возрастных кризисов.</p>
+                <p>Центры также проводят профилактические программы и тренинги по укреплению семейных отношений.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="initiative4Modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Наставничество для подростков</h2>
+                <p>Программа взаимодействия успешных взрослых с подростками из неполных семей помогает подросткам в профессиональном самоопределении и социальной адаптации.</p>
+                <p>Наставники - это волонтёры из разных профессиональных сфер, которые делятся своим опытом, помогают в выборе профессии и развитии навыков.</p>
+                <p>Программа включает регулярные встречи, экскурсии на предприятия, мастер-классы и совместные проекты.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="initiative5Modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>"Семейные традиции"</h2>
+                <p>Цикл образовательных мероприятий по возрождению семейных традиций и ценностей включает лекции, мастер-классы, фестивали и издательские проекты.</p>
+                <p>Участники программы изучают историю семейных традиций народов России, осваивают ремёсла, кулинарные традиции и праздничные обряды.</p>
+                <p>Программа способствует укреплению межпоколенческих связей и передаче культурного наследия.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="initiative6Modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Поддержка многодетных семей</h2>
+                <p>Комплекс мер социальной и материальной поддержки многодетных семей региона включает льготы по оплате ЖКХ, налоговые вычеты, бесплатное питание в школах и детских садах.</p>
+                <p>Многодетные семьи получают приоритет при распределении путёвок в детские оздоровительные лагеря и санатории.</p>
+                <p>Также предусмотрены программы по организации семейного досуга и творческого развития детей из многодетных семей.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Регистрация на мероприятие</h2>
+                <p id="selectedEvent" style="color: #e74c3c; font-weight: 500; margin-bottom: 20px;">Выберите мероприятие из списка ниже</p>
+                
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Иванов Иван Иванович" required>
+                        <div class="error-message" id="fullNameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                        <div class="error-message" id="phoneError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventDate">Дата мероприятия *</label>
+                        <select id="eventDate" name="eventDate" required>
+                            <option value="">Выберите мероприятие</option>
+                            <option value="2024-03-15">15 марта - Фестиваль "Семейные традиции"</option>
+                            <option value="2024-03-22">22 марта - Семинар "Современная семья"</option>
+                            <option value="2024-04-05">5 апреля - Выставка "Семейные ценности"</option>
+                            <option value="2024-04-12">12 апреля - Онлайн-марафон "Родительство"</option>
+                        </select>
+                        <div class="error-message" id="eventDateError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="participation">Форма участия *</label>
+                        <select id="participation" name="participation" required>
+                            <option value="">Выберите форму участия</option>
+                            <option value="offline">Очно</option>
+                            <option value="online">Онлайн</option>
+                        </select>
+                        <div class="error-message" id="participationError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="participants">Количество участников</label>
+                        <select id="participants" name="participants">
+                            <option value="1">1 человек</option>
+                            <option value="2">2 человека</option>
+                            <option value="3">3 человека</option>
+                            <option value="4">4+ человека</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Комментарии (необязательно)</label>
+                        <textarea id="comments" name="comments" rows="3" placeholder="Ваши пожелания или вопросы..."></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="btn-clear" id="clearFormBtn">
+                            <i class="fas fa-times"></i> Очистить форму
+                        </button>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-check"></i> Зарегистрироваться
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
